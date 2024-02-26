@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>DataTuch API</h1>
+    <p>Выберите действие:</p>
+    <button onclick="sendRequest(1)">1. Парсинг TG даты</button>
+    <button onclick="sendRequest(2)">2. *колличетво отправленных сообщений каждым пользователем*</button>
+    <button onclick="sendRequest(3)">3. Статистика</button>
+    <button onclick="sendRequest(4)">4. средняя длинна сообщения</button>
+    <button onclick="sendRequest(5)">5. количество мусора</button>
+    <button onclick="sendRequest(6)">6. Сброс данных</button>
+    <button onclick="sendRequest(7)">7. Путь к json</button>
+    <button onclick="sendRequest(8)">8. Выход</button>
+    <div id="response"></div>
+</div>
+
+<script>
+    function sendRequest() {
+        // Место для отправки запроса к твоему Java-приложению
+
+        // После получения ответа, его можно отобразить на странице
+        document.getElementById("response").innerText = "Тут будет ответ от API";
+    }
+</script>
+</body>
+</html>
