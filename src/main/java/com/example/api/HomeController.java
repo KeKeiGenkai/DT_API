@@ -8,11 +8,11 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "index"; // Возвращает представление с кнопкой
+        return "index"; // представление с кнопкой
     }
 
     @GetMapping("/data-tuch")
     public String dataTuchPage() {
-        return "web-inerface"; // Возвращает представление для работы с DataTuch
+        return "web-inerface"; // представление для работы с DataTuch
     }
 }
